@@ -14,6 +14,8 @@ def read_root():
 @app.get("/saudável")
 def checando_saude():
     return {"status" : "saudável"}
-@app.get("/erro")
-def forcar_erro():
-    return 1/0
+
+#Rota de teste utilizada para validar o monitoramento do Sentry / Desativada em produção
+#@app.get("/erro")
+#def forcar_erro():
+#    return 1/0
